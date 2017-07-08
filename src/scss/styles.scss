@@ -1,0 +1,46 @@
+@import 'libs/resetsheet';
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+@import 'font-awesome.min.css';
+
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+@include skel-breakpoints((
+  xlarge: '(max-width: 1680px)',
+  large: '(max-width: 1280px)',
+  medium: '(max-width: 980px)',
+  small: '(max-width: 736px)',
+  xsmall: '(max-width: 640px)',
+  xxsmall: '(max-width: 360px)'
+));
+
+@include skel-layout((
+  reset: 'full',
+  boxModel: 'border',
+  grid: ( gutters: 1.75em ),
+  breakpoints: (
+    small: (
+      grid: ( gutters: 1.25em )
+    )
+  )
+));
+// Base.
+
+	// @import 'base/page';
+	@import 'base/typography';
+
+
+/*layout*/
+@import 'layout/nav';
+@import 'layout/about';
+
+/*components*/
+@import 'components/parallex';
+@import 'components/lightbox';
+@import 'components/h2lijnen';
+@import 'components/slider';

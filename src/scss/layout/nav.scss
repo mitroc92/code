@@ -1,0 +1,26 @@
+nav{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  ul{
+    list-style-type: none;
+    li{
+      color: _palette(bg);
+      float: left;
+      padding: 2.5%;
+    }
+  }
+}
+
+.scrollButton{
+color: _pallete(fg-nav);
+width: 40%;
+margin-top: 60vh;
+margin-left: 40%;
+float: left;
+font-size: 3em;
+border-bottom-color: transparent;
+ i{
+   margin-left: 23.5%;
+ }
+}

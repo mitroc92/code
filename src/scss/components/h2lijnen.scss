@@ -1,0 +1,14 @@
+h2{
+  width:auto;
+    text-decoration: none;
+    position: relative;
+}
+h2:after  {
+    content: "";
+    border-bottom: 0.5em solid rgba(199, 231, 231, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.4em;
+    z-index:-999;
+}

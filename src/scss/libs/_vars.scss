@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,700|Open+Sans+Condensed:300,700|Oswald:400,700');
+
+// Misc.
+	$misc: (
+		z-index-base:			10000,
+		max-wrapper-styles:		6
+	);
+
+// Duration.
+	$duration: (
+		menu:							0.35s,
+		transition:				0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:			5px,
+		element-height:			2.75em,
+		element-margin:			2em,
+		inner:							55em,
+		section-spacing:		(
+			large:				3em,
+			medium:				2em,
+			small:				1.75em
+		),
+		wrapper-edges:			(
+			large:				6.5em,
+			medium:				4.75em,
+			small:				2.5em
+		)
+	);
+
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Inconsolata', monospace;
+*/
+// Font.
+	$font: (
+		family:					('Inconsolata', monospace),
+		family-fixed:		('Inconsolata', monospace),
+		family-heading:	('Open Sans Condensed', sans-serif),
+		weight:					300,
+		weight-bold:		600,
+		weight-heading:	200,
+		weight-heading-bold:	700,
+		kern-heading:		0.1em
+	);
+
+// Palette.
+	$palette: (
+		bg:							#fff,
+		fg:							#000,
+		fg-bold:				#000,
+		fg-nav: 				#fff,
+		fg-light:				rgba(255,255,255,0.35),
+		border:					rgba(255,72,196,0.225),
+		border-bg:			rgba(255,72,196,0.05),
+		border-button: 	rgba(225,72,196,0.25),
+		border2:				rgba(101,168,183,0.25),
+		border2-bg:			rgba(101,168,183,0.075),
+		accent:					#AA5B93
+	);

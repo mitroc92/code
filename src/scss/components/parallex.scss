@@ -1,0 +1,30 @@
+
+
+.parallex1 {
+    /* The image used */
+    background-image: url("../img/begin_website.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallex2{
+  @extend .parallex1;
+
+  background-image: url("../img/budapest.jpg");
+}
+.parallex3{
+  @extend .parallex1;
+
+  background-image: url("../img/bloemen.jpg");
+}
+.parallex4{
+  @extend .parallex1;
+
+  background-image: url("../img/1_7.jpg");
+}
