@@ -1,11 +1,11 @@
 h2{
-  width:auto;
+  width: 10%;
     text-decoration: none;
     position: relative;
 }
 h2:after  {
     content: "";
-    border-bottom: 0.5em solid rgba(199, 231, 231, 0.5);
+    border-bottom: 0.5em solid rgba(199, 231, 231, 0.6);
     position: absolute;
     left: 0;
     right: 0;
