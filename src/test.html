@@ -19,10 +19,31 @@
     <link rel="manifest" href="img/favicon/manifest.json">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+
+
+    <link href= "css/jPopup.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<a href="#cats">kattenplaatjes</a>
+<button class="openPopup" type="button">kattenplaatjes</button>
 
+<script src="js/jPopup.min.js"></script>
+<script>
+
+    /*** DEMO js ***/
+
+    document.querySelector('.openPopup').addEventListener('click', function() {
+
+        var jPopupDemo = new jPopup({
+
+            contentHtml: '<strong>Hurray</strong>\
+                    <p>You can put any content you want here.</p>\
+                    <img src="img/logo.png" alt="">'
+
+        });
+
+    });
+
+</script>
 
 
 
