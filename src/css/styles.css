@@ -1469,6 +1469,24 @@ nav {
         text-align: right;
         color: _pallete(fg); }
 
+.formulier {
+  margin-left: 10%;
+  width: 30%; }
+
+.submit-button {
+  float: right;
+  background-color: #c7e7e7;
+  border: none;
+  color: #fff;
+  width: 25%;
+  height: 10%; }
+
+input {
+  width: 61%; }
+
+.move-right {
+  margin-left: 21%; }
+
 /*components*/
 .parallex1, .parallex2, .parallex3, .parallex4 {
   /* The image used */
@@ -1491,13 +1509,13 @@ nav {
   background-image: url("../img/1_7.jpg"); }
 
 h2 {
-  width: auto;
+  max-width: 10%;
   text-decoration: none;
   position: relative; }
 
 h2:after {
   content: "";
-  border-bottom: 0.5em solid rgba(199, 231, 231, 0.5);
+  border-bottom: 0.5em solid rgba(199, 231, 231, 0.6);
   position: absolute;
   left: 0;
   right: 0;
