@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,700|Open+Sans+Condensed:300,700|Oswald:400,700");
 @import url(font-awesome.min.css);
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, .right-h3, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -54,7 +54,7 @@ body, html {
   overflow-x: hidden; }
 
 /* Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, .right-h3, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -1332,23 +1332,23 @@ li {
   text-transform: uppercase;
   font-size: 1.25em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, .right-h3, h3, h4, h5, h6 {
   color: #000;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: 700;
   letter-spacing: 0.1em;
   margin: 0 0 1em 0;
   text-transform: uppercase; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  h1 a, h2 a, h3 a, .right-h3 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
     text-decoration: none; }
-  h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  h1 span, h2 span, h3 span, .right-h3 span, h3 span, h4 span, h5 span, h6 span {
     font-weight: 200; }
-  h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+  h1.major, h2.major, h3.major, .major.right-h3, h3.major, h4.major, h5.major, h6.major {
     padding-bottom: 1em;
     border-bottom: solid 2px rgba(255, 72, 196, 0.225); }
 
-h2 {
+h2, h3, .right-h3 {
   font-size: 2em; }
 
 h3 {
@@ -1366,7 +1366,7 @@ h6 {
   font-size: 0.7em; }
 
 @media screen and (max-width: 736px) {
-  h2 {
+  h2, h3, .right-h3 {
     font-size: 1em; }
   h3 {
     font-size: 0.8em; } }
@@ -1458,7 +1458,7 @@ nav {
     margin-top: 2em;
     margin-right: 2em;
     float: right; }
-    .about .rightAboutInfo h2 {
+    .about .rightAboutInfo h2, .about .rightAboutInfo h3, .about .rightAboutInfo .right-h3 {
       float: right;
       width: 40%;
       text-align: right;
@@ -1471,7 +1471,10 @@ nav {
 
 .formulier {
   margin-left: 10%;
-  width: 30%; }
+  width: 40%;
+  margin-right: 0%;
+  float: left;
+  border-right: 1px solid #C7FDE7; }
 
 .submit-button {
   float: right;
@@ -1479,13 +1482,18 @@ nav {
   border: none;
   color: #fff;
   width: 25%;
-  height: 10%; }
+  height: 10%;
+  margin-right: 25%; }
 
 input {
-  width: 61%; }
+  width: 46%; }
 
 .move-right {
-  margin-left: 21%; }
+  margin-left: 15.8%; }
+
+.contactgegevens {
+  float: right;
+  width: 40%; }
 
 /*components*/
 .parallex1, .parallex2, .parallex3, .parallex4 {
@@ -1508,12 +1516,12 @@ input {
 .parallex4 {
   background-image: url("../img/1_7.jpg"); }
 
-h2 {
+h2, h3, .right-h3 {
   max-width: 10%;
   text-decoration: none;
   position: relative; }
 
-h2:after {
+h2:after, h3:after, .right-h3:after {
   content: "";
   border-bottom: 0.5em solid rgba(199, 231, 231, 0.6);
   position: absolute;
@@ -1521,6 +1529,15 @@ h2:after {
   right: 0;
   bottom: 0.4em;
   z-index: -999; }
+
+h3 {
+  max-width: 55%; }
+
+.right-h3 {
+  max-width: 50%;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  font-weight: 200; }
 
 .main_container {
   display: block;

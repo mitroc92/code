@@ -12,3 +12,14 @@ h2:after  {
     bottom: 0.4em;
     z-index:-999;
 }
+h3{
+  @extend h2;
+  max-width: 55%;
+}
+.right-h3{
+  @extend h2;
+  max-width: 50%;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  font-weight: 200;
+}
