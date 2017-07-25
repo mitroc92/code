@@ -1491,9 +1491,31 @@ input {
 .move-right {
   margin-left: 15.8%; }
 
+.move-left {
+  margin-left: -0.2%; }
+
 .contactgegevens {
   float: right;
   width: 40%; }
+
+footer {
+  background: #c7e7e7;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 25%;
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%; }
+
+.vet-gedrukt {
+  text-decoration: bold; }
+
+.linker-footer, .rechter-footer {
+  float: left; }
+
+.rechter-footer {
+  float: right; }
 
 /*components*/
 .parallex1, .parallex2, .parallex3, .parallex4 {
@@ -1517,7 +1539,7 @@ input {
   background-image: url("../img/1_7.jpg"); }
 
 h2, h3, .right-h3 {
-  max-width: 10%;
+  max-width: 40%;
   text-decoration: none;
   position: relative; }
 
