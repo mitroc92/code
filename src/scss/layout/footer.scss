@@ -1,0 +1,21 @@
+footer{
+  background: rgba(199, 231, 231, 1);
+  bottom: 0px;
+  width: 100%;
+  margin-top: 25%;
+  color: #fff;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+  padding-top: 2.5%;
+}
+.vet-gedrukt{
+  text-decoration: bold;
+}
+.linker-footer{
+  float: left;
+}
+.rechter-footer{
+  @extend .linker-footer;
+  float: right;
+
+}
