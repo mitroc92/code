@@ -1425,6 +1425,7 @@ hr {
 
 /*layout*/
 nav {
+  z-index: 99;
   width: 50%;
   display: block;
   margin: 0 auto; }
@@ -1442,11 +1443,13 @@ nav {
   margin-left: 40%;
   float: left;
   font-size: 3em;
-  border-bottom-color: transparent; }
+  border-bottom-color: transparent;
+  transform: skewY(5deg); }
   .scrollButton i {
     margin-left: 23.5%; }
 
 .about {
+  margin-top: 5%;
   height: 30em; }
   .about img {
     float: left;
@@ -1455,7 +1458,7 @@ nav {
     margin-top: 2em; }
   .about .rightAboutInfo {
     max-width: 50%;
-    margin-top: 2em;
+    margin-top: -5%;
     margin-right: 2em;
     float: right; }
     .about .rightAboutInfo h2, .about .rightAboutInfo h3, .about .rightAboutInfo .right-h3 {
@@ -1464,6 +1467,7 @@ nav {
       text-align: right;
       color: _pallete(fg-bold); }
     .about .rightAboutInfo article {
+      margin-top: 5%;
       float: right; }
       .about .rightAboutInfo article p {
         text-align: right;
@@ -1527,7 +1531,8 @@ footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  transform: skewY(-5deg); }
 
 .parallex2 {
   background-image: url("../img/budapest.jpg"); }
