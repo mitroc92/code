@@ -14,21 +14,33 @@
   color: #fff;
   width: 25%;
   height: 10%;
-  margin-right: 25%;
+  margin-right: 30%;
+}
+.submit-button:hover{
+  color: black;
+  background-color: #fff;
 }
 input{
   // float: right;
 }
 input{
-  width: 46%;
+  // width: 46%;
+  height: 10%;
+  float: right;
+  margin-right: 30%;
 }
-.move-right{
-  margin-left: 15.8%;
-}
-.move-left{
-  margin-left: -0.2%;
-}
+// .move-right{
+//   margin-left: 15.8%;
+// }
+// .move-left{
+//   margin-left: -0.2%;
+// }
 .contactgegevens{
   float: right;
   width: 40%;
+}
+.bericht{
+  float: left;
+  // margin-top: 1%;
+  margin-right: 3%;
 }

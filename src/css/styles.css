@@ -1436,18 +1436,6 @@ nav {
       float: left;
       padding: 2.5%; }
 
-.scrollButton {
-  color: _pallete(fg-nav);
-  width: 40%;
-  margin-top: 60vh;
-  margin-left: 40%;
-  float: left;
-  font-size: 3em;
-  border-bottom-color: transparent;
-  transform: skewY(5deg); }
-  .scrollButton i {
-    margin-left: 23.5%; }
-
 .about {
   margin-top: 5%;
   height: 30em; }
@@ -1487,26 +1475,31 @@ nav {
   color: #fff;
   width: 25%;
   height: 10%;
-  margin-right: 25%; }
+  margin-right: 30%; }
+
+.submit-button:hover {
+  color: black;
+  background-color: #fff; }
 
 input {
-  width: 46%; }
-
-.move-right {
-  margin-left: 15.8%; }
-
-.move-left {
-  margin-left: -0.2%; }
+  height: 10%;
+  float: right;
+  margin-right: 30%; }
 
 .contactgegevens {
   float: right;
   width: 40%; }
 
+.bericht {
+  float: left;
+  margin-right: 3%; }
+
 footer {
   background: #c7e7e7;
   bottom: 0px;
   width: 100%;
-  margin-top: 25%;
+  margin-top: 2.5%;
+  float: left;
   color: #fff;
   padding-left: 5%;
   padding-bottom: 2.5%;
@@ -1532,7 +1525,8 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: skewY(-5deg); }
+  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%); }
 
 .parallex2 {
   background-image: url("../img/budapest.jpg"); }
@@ -1542,6 +1536,28 @@ footer {
 
 .parallex4 {
   background-image: url("../img/1_7.jpg"); }
+
+.scrollButton {
+  color: _pallete(fg-nav);
+  width: 40%;
+  margin-top: 55vh;
+  margin-left: 40%;
+  float: left;
+  font-size: 3em;
+  border-bottom-color: transparent; }
+  .scrollButton a {
+    border-bottom: none;
+    color: white; }
+  .scrollButton i {
+    margin-left: 23.5%; }
+
+.paralex {
+  -webkit-clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 88%);
+  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 88%); }
+
+.paralex-odd {
+  -webkit-clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
+  clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%); }
 
 h2, h3, .right-h3 {
   max-width: 40%;

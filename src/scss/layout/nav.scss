@@ -12,21 +12,3 @@ nav{
     }
   }
 }
-
-.scrollButton{
-color: _pallete(fg-nav);
-width: 40%;
-margin-top: 60vh;
-margin-left: 40%;
-float: left;
-font-size: 3em;
-border-bottom-color: transparent;
--webkit-transform: skewY(5deg);
--moz-transform: skewY(5deg);
--ms-transform: skewY(5deg);
-//-o-transform: skewY(-5deg);
-transform: skewY(5deg);
- i{
-   margin-left: 23.5%;
- }
-}
